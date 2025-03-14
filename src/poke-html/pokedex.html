@@ -1,0 +1,200 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pokedex</title>
+</head>
+<body>
+    
+    <div class="card-container"> <!-- card #0001 -->
+        <div class="box-code bg-grass">
+            <span class="text-code">#0001</span>
+        </div>
+        <img src="./image/bulbasaur.png" alt="">
+        <div class="box-type">
+            <span class="text-type bg-grass">Grass</span>
+            <span class="text-type bg-poison">Poison</span>
+        </div>
+        <box-name class="box-name bg-grass">
+            <span class="text-name">Bulbasaur</span>
+        </box-name>
+    </div>
+
+    
+    <div class="card-container"> <!-- card #0002 -->
+        <div class="box-code bg-grass">
+            <span class="text-code">#0001</span>
+        </div>
+        <img src="./image/bulbasaur.png" alt="">
+        <div class="box-type">
+            <span class="text-type bg-grass">Grass</span>
+            <span class="text-type bg-poison">Poison</span>
+        </div>
+        <box-name class="box-name bg-grass">
+            <span class="text-name">Bulbasaur</span>
+        </box-name>
+    </div>
+
+    <div class="card-container"> <!-- card #0003 -->
+        <div class="box-code bg-grass">
+            <span class="text-code">#0001</span>
+        </div>
+        <img src="./image/bulbasaur.png" alt="">
+        <div class="box-type">
+            <span class="text-type bg-grass">Grass</span>
+            <span class="text-type bg-poison">Poison</span>
+        </div>
+        <box-name class="box-name bg-grass">
+            <span class="text-name">Bulbasaur</span>
+        </box-name>
+    </div>
+
+    <div class="card-container"> <!-- card #0004 -->
+        <div class="box-code bg-grass">
+            <span class="text-code">#0001</span>
+        </div>
+        <img src="./image/bulbasaur.png" alt="">
+        <div class="box-type">
+            <span class="text-type bg-grass">Grass</span>
+            <span class="text-type bg-poison">Poison</span>
+        </div>
+        <box-name class="box-name bg-grass">
+            <span class="text-name">Bulbasaur</span>
+        </box-name>
+    </div>
+
+    <div class="card-container"> <!-- card #0005 -->
+        <div class="box-code bg-grass">
+            <span class="text-code">#0001</span>
+        </div>
+        <img src="./image/bulbasaur.png" alt="">
+        <div class="box-type">
+            <span class="text-type bg-grass">Grass</span>
+            <span class="text-type bg-poison">Poison</span>
+        </div>
+        <box-name class="box-name bg-grass">
+            <span class="text-name">Bulbasaur</span>
+        </box-name>
+    </div>
+
+    <div class="card-container"> <!-- card #0006 -->
+        <div class="box-code bg-grass">
+            <span class="text-code">#0001</span>
+        </div>
+        <img src="./image/bulbasaur.png" alt="">
+        <div class="box-type">
+            <span class="text-type bg-grass">Grass</span>
+            <span class="text-type bg-poison">Poison</span>
+        </div>
+        <box-name class="box-name bg-grass">
+            <span class="text-name">Bulbasaur</span>
+        </box-name>
+    </div>
+
+    <div class="card-container"> <!-- card #0007 -->
+        <div class="box-code bg-grass">
+            <span class="text-code">#0001</span>
+        </div>
+        <img src="./image/bulbasaur.png" alt="">
+        <div class="box-type">
+            <span class="text-type bg-grass">Grass</span>
+            <span class="text-type bg-poison">Poison</span>
+        </div>
+        <box-name class="box-name bg-grass">
+            <span class="text-name">Bulbasaur</span>
+        </box-name>
+    </div>
+
+    <style>
+        .bg-grass{ background-color: green; }
+        .bg-walter{ background-color: green; }
+        .bg-fire{ background-color: green; }
+        .bg-poison{ background-color: #9a06b0; }
+
+        .txt-grass{ color: green;}
+        .txt-walter{ color: green;}
+        .txt-fire{ color: green;}
+
+        *{
+            box-sizing: border-box;
+        }
+
+        body{
+            color: white;
+            gap: 20px;
+            display: flex;
+            justify-content: space-evenly;
+            flex-wrap: wrap;
+        }
+        .card-container{
+            color: black;
+            max-width: 350px;
+            background-color: #f1f1f1;
+
+            display: flex;
+            flex-direction: column;
+
+            border-top-left-radius: 30px;
+            border-bottom-right-radius: 30px;
+            position: relative;
+        }
+        .box-code{
+            width: 70px;
+            height: 35px;
+            position: absolute;
+            right: 0;
+            border-bottom-left-radius: 20px;
+
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+        .text-code{
+            color: white;
+            font-size: 20px;
+            text-align: center;
+        }
+        .box-type{
+            display: flex;
+            text-align: center;
+            align-items: center;
+            justify-content: center;
+            padding-bottom: 10px;
+            
+        }
+        .text-type{
+            color: white;
+            width: 70px;
+            padding: 7px;
+            margin: 0 10px;
+            border-top-left-radius: 20px;
+            border-bottom-right-radius: 20px;
+        }
+        img{
+            width: 80%;
+            margin: 0 auto;
+            height: auto;
+            object-fit: cover;
+
+            transition: 0.5s;
+            cursor: pointer;
+            
+        }
+        img:hover{
+            transform: scale(1.1) rotate(10deg);
+        }
+        .box-name{
+            width: 350px;
+            height: 50px;
+            text-align: center;
+            padding: 10px;
+            border-bottom-right-radius: 30px;
+        }
+        .text-name{
+            color: white;
+            font-size: 25px;
+        }
+    </style>
+</body>
+</html>
